@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dice Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="body">
+	<h1 >Roll The Dice </h1>
+	<div class="upperbody">
+	<h2 id="selectednumber">Selected Number-~</h2>
+	<div class="dice first-face faces " >
+  	<span class="dot">
+  	</span>
+</div>
+
+<div class="dice second-face faces">
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<div class="dice third-face faces">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<div class="fourth-face dice faces">
+ 	<div class="column">
+    	<span class="dot"></span>
+    	<span class="dot"></span>
+  	</div>
+  	<div class="column">
+    	<span class="dot"></span>
+    	<span class="dot"></span>
+  	</div>
+</div>
+<div class="fifth-face dice faces">
+  
+  	<div class="column">
+    	<span class="dot"></span>
+    	<span class="dot"></span>
+  	</div>
+  
+  	<div class="column">
+    	<span class="dot"></span>
+  	</div>
+  
+  	<div class="column">
+    	<span class="dot"></span>
+    	<span class="dot"></span>
+  	</div>
+
+</div>
+<div class="sixth-face dice faces">
+  	<div class="column">
+    	<span class="dot"></span>
+    	<span class="dot"></span>
+    	<span class="dot"></span>
+  	</div>
+  	<div class="column">
+    	<span class="dot"></span>
+    	<span class="dot"></span>
+        <span class="dot"></span>
+  	</div>
+
+</div>
+	<h2 id="currentscore">Current Score-0</h2>
+	</div>
+ 	
+ 	<div class="numbers">
+	<input type="radio" name="guess" value="1" class="radioinput" label="1">
+	<input type="radio" name="guess" value="2" class="radioinput" label="2">
+	<input type="radio" name="guess" value="3" class="radioinput" label="3">
+	<input type="radio" name="guess" value="4" class="radioinput" label="4">
+	<input type="radio" name="guess" value="5" class="radioinput" label="5">
+	<input type="radio" name="guess" value="6" class="radioinput" label="6">
+	</div>
+	
+	
+	<div class="lowerbody">
+		<h2 id="gamestartinfo">Loading!!Game will start in few seconds</h1>
+		<div id="timerandresultinfo">
+			<h3 id="timerinfo"></h3>
+			<h4 id="resultinfo"></h4>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

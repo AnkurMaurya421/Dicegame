@@ -1,0 +1,155 @@
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background: rgb(36,73,203);
+	background: linear-gradient(90deg, rgba(36,73,203,1) 0%, rgba(11,1,18,1) 0%, rgba(10,5,64,1) 45%, rgba(11,3,39,1) 98%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+	height:100%;
+}
+h1{
+	color: #f4e1d2;
+	font-size: 5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.upperbody{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	margin: 54px;
+}
+.lowerbody{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    width: 100%;
+    margin: 100px;
+}
+#timerinfo{
+	color: #f4e1d2;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#resultinfo{
+	color:#3b3a30;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: yellow;
+}
+
+#gamestartinfo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: #f4e1d2;
+}
+#currentscore{
+color: #f4e1d2;
+}
+#selectednumber{
+color: #f4e1d2;
+}
+/* styling of numbers*/
+.numbers{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	justify-items:center;
+
+}
+.numbers input {
+	width: auto;
+	height: 100%;
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 2px;
+	padding: 14px 18px;
+	background: #454857;
+	color: #bdbdbdbd;
+	font-size: 14px;
+	transition: all 100ms linear;
+}
+
+.numbers input:checked {
+	background-image: linear-gradient(180deg, #95d891, #74bbad);
+	color: #fff;
+	box-shadow: 0 1px 1px #0000002e;
+	text-shadow: 0 1px 0px #79485f7a;
+}
+
+.numbers input:before {
+	content: attr(label);
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+
+/* styling of dice*/
+
+
+.first-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dice {
+  padding: 4px;
+  background-color:  #d64161;
+  width: 104px;
+  height: 104px;
+  border-radius: 10%;
+  margin-right : 10px;
+}
+.dot{
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color:white;
+}
+
+.second-face{
+  display: none ;
+  justify-content: space-between;
+}
+
+.second-face .dot:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+.third-face {
+  display: none;
+  justify-content: space-between;
+}
+
+.third-face .dot:nth-of-type(1) {
+  align-self :flex-end;
+}
+
+.third-face .dot:nth-of-type(2) {
+  align-self :center;
+}
+
+
+.fourth-face , .sixth-face, .fifth-face{
+  display: none;
+  justify-content: space-between;
+}
+
+.fourth-face .column , .sixth-face .column, .fifth-face .column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fifth-face .column:nth-of-type(2) {
+  justify-content: center;
+}
