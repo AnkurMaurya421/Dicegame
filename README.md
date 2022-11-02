@@ -1,2 +1,2 @@
 # Dicegame
-DIce game ahfahf
+Project for curiousJr interview
